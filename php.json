@@ -1,0 +1,131 @@
+{
+	// Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+
+	"Comment Big": {
+		"prefix": "comment-big",
+		"body": [
+			"/********************************************************",
+			"**  COMMENT",
+			"********************************************************/"
+		],
+		"description": "Custom print-r for logged in users"
+	},
+
+	"Print-r Logged In": {
+		"prefix": "print-r-loggedin",
+		"body": [
+			"if( is_user_logged_in() ) {",
+				"echo '<pre style=\"z-index: 999; position: relative; background: #f9f9f9; direction: ltr; text-align: left;\"> NAME:'.\"<br>\";",
+				"print_r($$xxx);",
+				"echo '</pre>'.\"<br>\";",
+			"}"
+		],
+		"description": "Custom print-r for logged in users"
+	},
+
+	"Print-r Everyone": {
+		"prefix": "print-everyone",
+		"body": [
+			"echo '<pre style=\"z-index: 999; position: relative; direction: ltr; text-align: left;\"> NAME:'.\"<br>\";",
+			"print_r($$xxx);",
+			"echo '</pre>'.\"<br>\";",
+		],
+		"description": "Custom print-r for everyone"
+	}, 
+
+	"Easy Echo": {
+		"prefix": "echo-smart",
+		"body": [
+			"echo \"Name: \".$$var.\"<br>\";",
+		],
+		"description": "Easy echo with variable and name"
+	},
+
+
+
+	"jQuery Wrap": {
+		"prefix": "jquery-wrap",
+		"body": [
+			"jQuery(function($){",
+			" ",
+			"});"
+		],
+		"description": "Log output to console"
+	},
+
+	"jQuery On Load": {
+		"prefix": "jquery-on-load",
+		"body": [
+			"jQuery(document).ready(function($) {",
+			" ",
+			"});"
+		],
+		"description": "Log output to console"
+	},
+
+	"Conole Log": {
+		"prefix": "console-log",
+		"body": [
+			"console.log('newVal' + newVal);"
+		],
+		"description": "Log output to console"
+	},
+
+	"Not Empty": {
+		"prefix": "empty_not",
+		"body": [
+			"( !empty($xxx) ? $xxxx : $yyy )"
+		],
+		"description": "easy check that a variable isnt empty"
+	},
+
+	"Easy Foreach": {
+		"prefix": "foreach_snippet",
+		"body": [
+			"$$result = '';",
+			"if( !empty($$xxx) ) {",
+			"    foreach($$xxx as $$xxx) {",
+			"        $$result = '';",
+			"    }",
+			"};"
+		],
+		"description": "easy check that a variable isnt empty"
+	},
+
+	"ACF Title": {
+		"prefix": "acftitle",
+		"body": [
+			"acfield_title()"
+		],
+		"description": "acf custom title field"
+	},
+
+	"ACF Image": {
+		"prefix": "acfimg",
+		"body": [
+			"acfield_img($$imgvar, 'img-fluid')"
+		],
+		"description": "acf custom image field"
+	},
+
+	"ACF Image Mobile": {
+		"prefix": "acfimg_mobcheck",
+		"body": [
+			"( wp_is_mobile() && !empty($$imgvarm) ? acfield_img($$imgvarm, 'img-fluid') : acfield_img($$imgvar, 'img-fluid') )"
+		],
+		"description": "acf custom image field"
+	}
+}

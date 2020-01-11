@@ -121,11 +121,18 @@
 		"description": "acf custom image field"
 	},
 
-	"ACF Image Mobile": {
-		"prefix": "acfimg_mobcheck",
+	"Same Frame Grid": {
+		"prefix": "same-frame-grid",
 		"body": [
-			"( wp_is_mobile() && !empty($$imgvarm) ? acfield_img($$imgvarm, 'img-fluid') : acfield_img($$imgvar, 'img-fluid') )"
+			"<div class=\"same-frame-grid\">",
+				"<div class=\"grid-child bglry\">",
+				"",
+				"</div>",
+				"<div class=\"grid-child txtlyr\">",
+				"",
+				"</div>",
+			"</div>"
 		],
-		"description": "acf custom image field"
-	}
+		"description": "works with related grid css"
+	},
 }

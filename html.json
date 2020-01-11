@@ -22,4 +22,18 @@
 		],
 		"description": "Easy comment inside an html page"
 	},
+	"Same Frame Grid": {
+		"prefix": "same-frame-grid",
+		"body": [
+			"<div class=\"same-frame-grid\">",
+				"<div class=\"grid-child bglry\">",
+				"",
+				"</div>",
+				"<div class=\"grid-child txtlyr\">",
+				"",
+				"</div>",
+			"</div>"
+		],
+		"description": "works with related grid css"
+	},
 }

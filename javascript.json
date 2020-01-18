@@ -49,5 +49,20 @@
 			"console.log('newVal' + newVal);"
 		],
 		"description": "Log output to console"
+	},
+
+	"Slick Slider": {
+		"prefix": "slick-slider",
+		"body": [
+			"$('#jobsSlider').slick({",
+			"dots: false,",
+			"arrows: true,",
+			"slidesToShow: 3,",
+			"slidesToScroll: 1,",
+			"prevArrow: IMG_URL_HERE,",
+			"nextArrow: IMG_URL_HERE,",
+			"});"
+		],
+		"description": "Log output to console"
 	}
 }
